@@ -8,5 +8,5 @@ from frappe.model.document import Document
 
 class DiskUsageAlertSettings(Document):
 	def validate(self):
-		if settings.usage > settings.minimum:
-	        settings.alert_state = True
+		if self.usage > self.minimum:
+			self.alert_state = True
