@@ -14,7 +14,7 @@ def update_disk_usage():
     settings.free = "%d GiB" % (free // (2**30))
     settings.usage = round(used/total * 100,2)
     if settings.usage > settings.minimum:
-        settings.alert_state = True
+        settings.alert_state = 1
     else:
-        settings.alert_state = False
+        settings.alert_state = 0
     settings.save()
