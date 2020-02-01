@@ -134,3 +134,7 @@ scheduler_events = {
 # override_doctype_dashboards = {
 # 	"Task": "frappe_disk_alert.task.get_dashboard_data"
 # }
+
+fixtures = [
+    {"dt": "Notification", "filters": [["document_type", "in", ("Disk Usage Alert Settings")]]}
+    ]

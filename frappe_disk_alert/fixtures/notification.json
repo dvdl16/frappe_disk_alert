@@ -1,0 +1,43 @@
+[
+ {
+  "attach_print": 0,
+  "channel": "Email",
+  "condition": "doc.alert_state==1",
+  "date_changed": null,
+  "days_in_advance": 0,
+  "docstatus": 0,
+  "doctype": "Notification",
+  "document_type": "Disk Usage Alert Settings",
+  "enabled": 1,
+  "event": "Save",
+  "is_standard": 0,
+  "message": "Hi\n\nThis is an automated alert. \nYour instance has crossed the minimum threshold ({{ doc.minimum }}%): The disk usage is {{ doc.usage }}%\n\nDisk size: {{ doc.total }}\nDisk free space: {{ doc.free }}",
+  "method": null,
+  "modified": "2020-02-01 20:40:23.266375",
+  "module": null,
+  "name": "Disk Usage Alert",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "print_format": null,
+  "property_value": null,
+  "recipients": [
+   {
+    "bcc": null,
+    "cc": null,
+    "condition": null,
+    "email_by_document_field": null,
+    "email_by_role": "System Manager",
+    "parent": "Disk Usage Alert",
+    "parentfield": "recipients",
+    "parenttype": "Notification"
+   }
+  ],
+  "sender": null,
+  "sender_email": null,
+  "set_property_after_alert": null,
+  "slack_webhook_url": null,
+  "subject": "Disk Usage Alert",
+  "value_changed": "usage"
+ }
+]
