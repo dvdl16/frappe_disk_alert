@@ -10,3 +10,5 @@ class DiskUsageAlertSettings(Document):
 	def validate(self):
 		if self.usage > self.minimum:
 			self.alert_state = True
+		else:
+			self.alert_state = False
