@@ -7,4 +7,6 @@ from __future__ import unicode_literals
 from frappe.model.document import Document
 
 class DiskUsageAlertSettings(Document):
-	pass
+	def validate(self):
+		if settings.usage > settings.minimum:
+	        settings.alert_state = True
