@@ -10,11 +10,12 @@
   "used",
   "free",
   "column_break_6",
-  "usage"
+  "usage",
+  "alert_state"
  ],
  "fields": [
   {
-   "default": "75",
+   "default": "75.0",
    "description": "The Notification will trigger if the disk usage is higher than this value",
    "fieldname": "minimum",
    "fieldtype": "Percent",
@@ -49,13 +50,20 @@
   },
   {
    "fieldname": "usage",
-   "fieldtype": "Data",
+   "fieldtype": "Percent",
    "label": "Disk Usage Percentage",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "alert_state",
+   "fieldtype": "Check",
+   "label": "Usage surpassed threshold?",
    "read_only": 1
   }
  ],
  "issingle": 1,
- "modified": "2020-02-01 19:45:31.719437",
+ "modified": "2020-02-01 20:36:50.321291",
  "modified_by": "Administrator",
  "module": "Frappe Disk Alert",
  "name": "Disk Usage Alert Settings",
