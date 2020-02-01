@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include frappe_disk_alert *.css
+recursive-include frappe_disk_alert *.csv
+recursive-include frappe_disk_alert *.html
+recursive-include frappe_disk_alert *.ico
+recursive-include frappe_disk_alert *.js
+recursive-include frappe_disk_alert *.json
+recursive-include frappe_disk_alert *.md
+recursive-include frappe_disk_alert *.png
+recursive-include frappe_disk_alert *.py
+recursive-include frappe_disk_alert *.svg
+recursive-include frappe_disk_alert *.txt
+recursive-exclude frappe_disk_alert *.pyc
