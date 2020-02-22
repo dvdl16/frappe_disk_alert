@@ -4,3 +4,4 @@
 *.swp
 tags
 frappe_disk_alert/docs/current
+__pycache__
