@@ -11,7 +11,9 @@
   "free",
   "column_break_6",
   "usage",
-  "alert_state"
+  "alert_state",
+  "info_section_section",
+  "info"
  ],
  "fields": [
   {
@@ -60,10 +62,21 @@
    "fieldtype": "Check",
    "label": "Usage surpassed threshold?",
    "read_only": 1
+  },
+  {
+   "fieldname": "info_section_section",
+   "fieldtype": "Section Break",
+   "label": "Info Section"
+  },
+  {
+   "fieldname": "info",
+   "fieldtype": "HTML",
+   "label": "Info",
+   "options": "<h6>Run in / </h6>\n<code>sudo du -hs * | sort -rh | head -5</code>\n<br>\n<h6>To see top directories and sub-directories in cwd:</h6>\n<code>sudo du -Sh | sort -rh | head -5</code>\n<br>\n<h6>Delete .txt files older than 30 days</h6>\n<code>find ~/frappe-bench/sites/site1.local/private/files -type f -mtime +7 -name '*.txt' -execdir rm -- '{}' \\;</code>\n<br>\n<h6>To see top file sizes</h6>\n<code>find -type f -exec du -Sh {} + | sort -rh | head -n 5</code>"
   }
  ],
  "issingle": 1,
- "modified": "2020-02-01 20:36:50.321291",
+ "modified": "2020-03-17 21:23:10.863910",
  "modified_by": "Administrator",
  "module": "Frappe Disk Alert",
  "name": "Disk Usage Alert Settings",
